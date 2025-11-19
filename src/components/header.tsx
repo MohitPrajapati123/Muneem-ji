@@ -32,7 +32,7 @@ export default function Header() {
             <div className="hidden sm:flex flex-col">
               <span className="font-bold text-2xl text-red-600">Muneem Ji</span>
               <span className="text-xs text-amber-600 font-semibold">
-                Finance & Compliance
+                Finance & Accounts
               </span>
             </div>
           </Link>
