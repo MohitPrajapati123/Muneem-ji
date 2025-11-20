@@ -20,7 +20,7 @@ export default function AboutPage() {
         <img
           src={about}
           alt="About Muneem Ji"
-          className="inset-0 object-cover"
+          className="w-full object-cover"
         />
 
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
