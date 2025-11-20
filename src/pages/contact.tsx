@@ -19,7 +19,9 @@ export default function ContactPage() {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -31,11 +33,31 @@ export default function ContactPage() {
 
     const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
     const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const autoReplyId = import.meta.env.VITE_EMAILJS_AUTO_REPLY_ID;
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-console.log(serviceId,templateId,publicKey)
+
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      subject: formData.subject,
+      message: formData.message,
+      time: new Date().toLocaleString(),
+    };
+
+    // 1️⃣ Send Email to Admin
     emailjs
-      .send(serviceId, templateId, formData, publicKey)
+      .send(serviceId, templateId, templateParams, publicKey)
       .then(() => {
+        console.log("Admin email sent!");
+      })
+      .catch((error) => console.error("Admin email failed:", error));
+
+    // 2️⃣ Auto Reply to User
+    emailjs
+      .send(serviceId, autoReplyId, templateParams, publicKey)
+      .then(() => {
+        console.log("Auto reply sent!");
         setSubmitted(true);
         setLoading(false);
 
@@ -51,8 +73,8 @@ console.log(serviceId,templateId,publicKey)
       })
       .catch((error) => {
         setLoading(false);
-        alert("Failed to send message. Please try again.");
-        console.error(error);
+        alert("Something went wrong. Please try again.");
+        console.error("Auto reply failed:", error);
       });
   };
 
@@ -75,8 +97,7 @@ console.log(serviceId,templateId,publicKey)
       {/* Contact Section */}
       <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4">
-
-          {/* 3 Info Boxes */}
+          {/* Contact Info */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div className="bg-white border rounded-lg p-8 text-center shadow-sm">
               <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mx-auto mb-4">
@@ -99,19 +120,21 @@ console.log(serviceId,templateId,publicKey)
                 <MapPin className="text-red-600" size={24} />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Location</h3>
-              <p className="text-gray-600">B-127, Sector-63, Noida - 201301 Second floor India</p>
+              <p className="text-gray-600">
+                B-127, Sector-63, Noida - 201301 Second floor India
+              </p>
             </div>
           </div>
 
           {/* Form + Info */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
-            {/* FORM */}
+            {/* Form */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Send us a Message</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                Send us a Message
+              </h2>
 
               <form onSubmit={handleSubmit} className="space-y-6">
-
                 {/* Name */}
                 <div>
                   <label className="block text-sm font-medium text-gray-800 mb-2">
@@ -216,7 +239,7 @@ console.log(serviceId,templateId,publicKey)
               </form>
             </div>
 
-            {/* INFO BOX */}
+            {/* Info Box */}
             <div className="bg-red-50 rounded-lg p-8 border border-red-200">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 Why Choose Muneemjee?
@@ -224,12 +247,16 @@ console.log(serviceId,templateId,publicKey)
               <ul className="space-y-4">
                 <li className="flex gap-3">
                   <span className="text-red-600 font-bold text-xl">✓</span>
-                  <p className="text-gray-700">Expert guidance for business compliance</p>
+                  <p className="text-gray-700">
+                    Expert guidance for business compliance
+                  </p>
                 </li>
 
                 <li className="flex gap-3">
                   <span className="text-red-600 font-bold text-xl">✓</span>
-                  <p className="text-gray-700">Details on Finance, HR, ESIC, EPFO & Startups</p>
+                  <p className="text-gray-700">
+                    Details on Finance, HR, ESIC, EPFO & Startups
+                  </p>
                 </li>
 
                 <li className="flex gap-3">
@@ -243,7 +270,6 @@ console.log(serviceId,templateId,publicKey)
                 </li>
               </ul>
             </div>
-
           </div>
         </div>
       </section>
