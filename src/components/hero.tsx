@@ -16,16 +16,15 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="text-center space-y-6">
           <div className="inline-block bg-primary/30 backdrop-blur-sm text-white px-6 py-2 rounded-full mb-4 border border-primary/50 shadow-lg">
-            <span className="text-sm font-semibold tracking-wide">📊 Your Complete Business Compliance Guide</span>
+            <span className="text-sm font-semibold tracking-wide">📊 Powering Businesses With Knowledge That Matters</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-black text-white mb-4 text-balance leading-tight drop-shadow-lg">
-            Master Finance, HR & Compliance
+            Master Business Compliance, Finance, and HR Management
           </h1>
 
           <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-8 text-pretty leading-relaxed font-light drop-shadow-md">
-            Comprehensive information on Finance & Accounts, HR Services, ESIC, EPFO, and everything you need to start
-            your business journey with confidence.
+            Detailed insights into Finance & Accounts, HR Services, ESIC, EPFO, and all the essential components required to ensure a successful and compliant business launch.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
