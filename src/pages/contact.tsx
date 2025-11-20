@@ -99,7 +99,7 @@ console.log(serviceId,templateId,publicKey)
                 <MapPin className="text-red-600" size={24} />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Location</h3>
-              <p className="text-gray-600">B-127, Sector-63, Noida - 201301</p>
+              <p className="text-gray-600">B-127, Sector-63, Noida - 201301 Second floor India</p>
             </div>
           </div>
 
