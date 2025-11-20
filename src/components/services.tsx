@@ -67,11 +67,11 @@ export default function Services() {
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Complete Business Solutions
+            All-Inclusive Business Solutions
           </h2>
           <p className="text-foreground/60 max-w-2xl mx-auto">
-            Everything you need to run a compliant and successful business
-          </p>
+            Everything you need to operate and grow a successful, fully regulated business.
+         </p>
         </div>
 
         {/* Cards */}

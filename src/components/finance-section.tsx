@@ -43,11 +43,10 @@ export default function FinanceSection() {
               💰 Finance & Accounts
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 text-balance">
-              Master Your Business Finances
+              Streamline Financial Processes
             </h2>
             <p className="text-foreground/70 mb-8">
-              Learn everything about maintaining proper financial records, managing taxes, and ensuring compliance with
-              government regulations.
+              Effectively manage financial records, optimize tax strategies, and ensure full compliance with government regulations.
             </p>
 
             <div className="space-y-3">
