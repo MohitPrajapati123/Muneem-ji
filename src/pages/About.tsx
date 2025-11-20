@@ -16,11 +16,11 @@ export default function AboutPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative h-0 md:h-[900px] w-full overflow-hidden">
+      <section className="relative w-full">
         <img
           src={about}
           alt="About Muneem Ji"
-          className="w-full h-full object-cover"
+          className="inset-0 object-cover"
         />
 
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
