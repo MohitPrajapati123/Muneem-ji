@@ -15,7 +15,7 @@ export default function ContactPage() {
     message: "",
   });
 
-  const [submitted, setSubmitted] = useState(false);
+  // const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const handleChange = (
@@ -30,10 +30,11 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
+    
 
     const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
     const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    const autoReplyId = import.meta.env.VITE_EMAILJS_AUTO_REPLY_ID;
+    // const autoReplyId = import.meta.env.VITE_EMAILJS_AUTO_REPLY_ID;
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     const templateParams = {
@@ -53,29 +54,7 @@ export default function ContactPage() {
       })
       .catch((error) => console.error("Admin email failed:", error));
 
-    // 2️⃣ Auto Reply to User
-    emailjs
-      .send(serviceId, autoReplyId, templateParams, publicKey)
-      .then(() => {
-        console.log("Auto reply sent!");
-        setSubmitted(true);
-        setLoading(false);
-
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          subject: "",
-          message: "",
-        });
-
-        setTimeout(() => setSubmitted(false), 4000);
-      })
-      .catch((error) => {
-        setLoading(false);
-        alert("Something went wrong. Please try again.");
-        console.error("Auto reply failed:", error);
-      });
+   
   };
 
   return (
@@ -231,11 +210,11 @@ export default function ContactPage() {
                 </button>
 
                 {/* Success Message */}
-                {submitted && (
+                {/* {submitted && (
                   <div className="text-green-700 bg-green-100 border border-green-500 px-4 py-3 rounded-lg text-center">
                     Thank you! Your message has been sent.
                   </div>
-                )}
+                )} */}
               </form>
             </div>
 
