@@ -14,7 +14,6 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen bg-white">
       <Header />
-
       {/* Hero Section */}
       <section className="relative w-full">
         <img
