@@ -2,7 +2,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
-import insurance from "../assets/insurance-protection-employee-security.jpg";
+import insurance from "../assets/insurance-protection-employee-security.png";
 
 export default function ESICPage() {
   return (

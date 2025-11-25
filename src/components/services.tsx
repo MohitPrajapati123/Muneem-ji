@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 import financeImg from "../assets/business-finance-accounting-professional.jpg";
 import hrImg from "../assets/human-resource-team-management-collaboration.jpg";
 import esicImg from "../assets/insurance-employee-protection-coverage.jpg";
-import epfoImg from "../assets/pension-retirement-savings-financial-security.jpg";
+import epfoImg from "../assets/pension-retirement-savings-financial-security.png";
 import startupImg from "../assets/startup-business-launch-entrepreneurship.jpg";
 
 const services = [
