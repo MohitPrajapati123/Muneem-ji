@@ -37,13 +37,12 @@ const App = () => {
           <Route path="/faqs" element={<FAQsPage />} />
           <Route path="/finance" element={<FinancePage />} />
           <Route path="/hr-services" element={<HRServicesPage />} />
-          <Route path="/hr-services/epfo" element={<EPFOPage />} />
-          <Route path="/hr-services/esic" element={<ESICPage />} />
           <Route path="/learn-more" element={<LearnMorePage />} />
           <Route path="/learn-more1" element={<LearnMorePage1 />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="startup" element={<StartupPage/>}/>
-          <Route path="terms-and-conditions" element={<TermsAndConditionsPage/>}/>
+          <Route path="/startup" element={<StartupPage/>}/>
+          <Route path="/terms-and-conditions" element={<TermsAndConditionsPage/>}/>
+           <Route path="/financial-reporting/esic-registration" element={<EPFOPage />} />
         </Routes>
       </HomeLayout>
     </BrowserRouter>

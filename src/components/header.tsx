@@ -41,107 +41,134 @@ export default function Header() {
           <nav className="hidden md:flex gap-8 items-center">
 
             {/* About - no dropdown */}
-            <Link to="/about" className="text-gray-700 hover:text-amber-600 transition font-medium">
+            {/* <Link to="/about" className="text-gray-700 hover:text-amber-600 transition font-medium">
               About Us
-            </Link>
-
-            {/* FINANCE DROPDOWN */}
+            </Link> */}
+             {/* Taxation DROPDOWN  */}
             <div
               className="relative"
-              onMouseEnter={() => setDropdown("finance")}
+              onMouseEnter={() => setDropdown("Taxation")}
               onMouseLeave={() => setDropdown(null)}
             >
               <button
                 className="flex items-center gap-1 text-gray-700 hover:text-amber-600 font-medium"
-                onClick={() => toggleDropdown("finance")}
+                onClick={() => toggleDropdown("Taxation")}
               >
-                Finance & Accounts <ChevronDown size={18} />
+                Taxation <ChevronDown size={18} />
               </button>
 
-              {dropdown === "finance" && (
+              {dropdown === "Taxation" && (
                 <div className="absolute bg-white shadow-xl p-4 rounded-lg top-full left-0 w-56">
-                  <Link to="/finance/accounting" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
+                  <Link to="/taxation/accounting" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
+                   GSTR-1 & GSTR-2A Data Preparation
+                  </Link>
+                  <Link to="/Taxation/gst" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
+                    GSTR-1 & GSTR-2A Reconciliation
+                  </Link>
+                  <Link to="/Taxation/tax" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
+                    GSTR-1, GST-2A , GSTR9 and 9C
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            {/* Registration DROPDOWN */}
+            <div
+              className="relative"
+              onMouseEnter={() => setDropdown("Registration")}
+              onMouseLeave={() => setDropdown(null)}
+            >
+              <button
+                className="flex items-center gap-1 text-gray-700 hover:text-amber-600 font-medium"
+                onClick={() => toggleDropdown("Registration")}
+              >
+                Registration <ChevronDown size={18} />
+              </button>
+
+              {dropdown === "Registration" && (
+                <div className="absolute bg-white shadow-xl p-4 rounded-lg top-full left-0 w-56">
+                  <Link to="/Registration/accounting" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
                     Accounting Services
                   </Link>
-                  <Link to="/finance/gst" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
+                  <Link to="/Registration/gst" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
                     GST Services
                   </Link>
-                  <Link to="/finance/tax" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
+                  <Link to="/Registration/tax" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
                     Tax Consultation
                   </Link>
                 </div>
               )}
             </div>
 
-            {/* HR DROPDOWN */}
+            {/* Accounting DROPDOWN */}
             <div
               className="relative"
-              onMouseEnter={() => setDropdown("hr")}
+              onMouseEnter={() => setDropdown("Accounting ")}
               onMouseLeave={() => setDropdown(null)}
             >
               <button
                 className="flex items-center gap-1 text-gray-700 hover:text-amber-600 font-medium"
                 onClick={() => toggleDropdown("hr")}
               >
-                HR Services <ChevronDown size={18} />
+                Accounting  <ChevronDown size={18} />
               </button>
 
-              {dropdown === "hr" && (
+              {dropdown === "Accounting " && (
                 <div className="absolute bg-white shadow-xl p-4 rounded-lg top-full left-0 w-56">
-                  <Link to="/hr-services/epfo" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
+                  <Link to="/Accounting /epfo" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
                     EPFO
                   </Link>
-                  <Link to="/hr-services/esic" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
+                  <Link to="/Accounting /esic" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
                     ESIC
                   </Link>
-                  <Link to="/hr-services/compliance" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
+                  <Link to="/Accounting /compliance" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
                     Compliance
                   </Link>
                 </div>
               )}
             </div>
 
-            {/* ESIC DROPDOWN */}
+            {/* Financial Reporting DROPDOWN */}
             <div
               className="relative"
-              onMouseEnter={() => setDropdown("esic")}
+              onMouseEnter={() => setDropdown("Financial Reporting")}
               onMouseLeave={() => setDropdown(null)}
             >
               <button
                 className="flex items-center gap-1 text-gray-700 hover:text-amber-600 font-medium"
-                onClick={() => toggleDropdown("esic")}
+                onClick={() => toggleDropdown("Financial Reporting")}
               >
-                ESIC <ChevronDown size={18} />
+                Financial Reporting <ChevronDown size={18} />
               </button>
 
-              {dropdown === "esic" && (
+              {dropdown === "Financial Reporting" && (
                 <div className="absolute bg-white shadow-xl p-4 rounded-lg top-full left-0 w-56">
-                  <Link to="/esic/registration" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
+                  <Link to="/financial-reporting/esic-registration" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
                     ESIC Registration
                   </Link>
-                  <Link to="/esic/returns" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
+                  <Link to="/Financial Reporting/returns" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
                     ESIC Returns
                   </Link>
                 </div>
               )}
             </div>
 
-            {/* EPFO DROPDOWN */}
+            {/* Labour & Legal Compliance DROPDOWN */}
             <div
               className="relative"
-              onMouseEnter={() => setDropdown("epfo")}
+              onMouseEnter={() => setDropdown("Labour & Legal Compliance")}
               onMouseLeave={() => setDropdown(null)}
             >
               <button
                 className="flex items-center gap-1 text-gray-700 hover:text-amber-600 font-medium"
-                onClick={() => toggleDropdown("epfo")}
+                onClick={() => toggleDropdown("Labour & Legal Compliance")}
               >
-                EPFO <ChevronDown size={18} />
+                Labour & Legal Compliance <ChevronDown size={18} />
               </button>
 
-              {dropdown === "epfo" && (
+              {dropdown === "Labour & Legal Compliance" && (
                 <div className="absolute bg-white shadow-xl p-4 rounded-lg top-full left-0 w-56">
-                  <Link to="/epfo/registration" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
+                  <Link to="/Labour & Legal Compliance/registration" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
                     EPFO Registration
                   </Link>
                   <Link to="/epfo/returns" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
@@ -174,15 +201,15 @@ export default function Header() {
               About Us
             </Link>
 
-            {/* Mobile Finance */}
+            {/* Mobile Registration */}
             <details className="bg-gray-100 p-3 rounded group">
               <summary className="cursor-pointer font-medium flex justify-between items-center">
-                Finance & Accounts <ChevronDown size={18} />
+                Registration & Accounts <ChevronDown size={18} />
               </summary>
               <div className="pl-4 mt-2 flex flex-col gap-2">
-                <Link to="/finance/accounting" onClick={handleNavClick}>Accounting Services</Link>
-                <Link to="/finance/gst" onClick={handleNavClick}>GST Services</Link>
-                <Link to="/finance/tax" onClick={handleNavClick}>Tax Consultation</Link>
+                <Link to="/Registration/accounting" onClick={handleNavClick}>Accounting Services</Link>
+                <Link to="/Registration/gst" onClick={handleNavClick}>GST Services</Link>
+                <Link to="/Registration/tax" onClick={handleNavClick}>Tax Consultation</Link>
               </div>
             </details>
 
