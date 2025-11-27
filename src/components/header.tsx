@@ -91,8 +91,8 @@ export default function Header() {
                   <Link to="/hr-services/epfo" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
                     EPFO
                   </Link>
-                  <Link to="/hr-services/recruitment" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
-                    Recruitment
+                  <Link to="/hr-services/esic" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
+                    ESIC
                   </Link>
                   <Link to="/hr-services/compliance" className="block py-2 hover:text-red-600" onClick={handleNavClick}>
                     Compliance

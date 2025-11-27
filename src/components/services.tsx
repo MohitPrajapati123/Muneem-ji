@@ -11,10 +11,10 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
-// ✅ Correct image imports
-import financeImg from "../assets/business-finance-accounting-professional.jpg";
-import hrImg from "../assets/human-resource-team-management-collaboration.jpg";
-import esicImg from "../assets/insurance-employee-protection-coverage.jpg";
+// Correct image imports
+import financeImg from "../assets/business-finance-accounting-professional.png";
+import hrImg from "../assets/human-resource-team-management-collaboration.png";
+import esicImg from "../assets/insurance-employee-protection-coverage.png";
 import epfoImg from "../assets/pension-retirement-savings-financial-security.png";
 import startupImg from "../assets/startup-business-launch-entrepreneurship.jpg";
 
