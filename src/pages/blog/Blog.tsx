@@ -8,10 +8,10 @@ import Footer from "@/components/footer";
 
 // Correct image imports
 import gst from "../../assets/gst-tax-guide.jpg";
-import payroll from "../../assets/payroll-management-team.jpg";
-import employee from "../../assets/employee-social-insurance.jpg";
+import payroll from "../../assets/payroll-management-team.png";
+import employee from "../../assets/employee-social-insurance.png";
 import provident from "../../assets/provident-fund-retirement.jpg";
-import startup from "../../assets/startup-launch-business.jpg";
+import startup from "../../assets/startup-launch-business.png";
 import income from "../../assets/income-tax-filing.jpg";
 
 export default function BlogPage() {

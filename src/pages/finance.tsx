@@ -2,7 +2,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
-import business from "../assets/business-finance-accounting-concept.jpg";
+import business from "../assets/business-finance-accounting-concept.png";
 
 export default function FinancePage() {
   return (

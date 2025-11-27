@@ -2,7 +2,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
-import human from "../assets/human-resource-management-team-collaboration.jpg";
+import human from "../assets/human-resource-management-team-collaboration.png";
 
 export default function HRServicesPage() {
   return (

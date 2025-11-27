@@ -6,9 +6,9 @@ import { Award, Users, Target, Lightbulb } from "lucide-react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
-import about from "../assets/about-us-hero-business-team.jpg";
+import about from "../assets/about-us-hero-business-team.png";
 import business from "../assets/business-mission-growth-strategy.jpg";
-import professional from "../assets/professional-team-support.jpg";
+import professional from "../assets/professional-team-support.png";
 
 export default function AboutPage() {
   return (
