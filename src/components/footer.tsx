@@ -12,12 +12,12 @@ export default function Footer() {
               <div className="relative w-12 h-12 bg-white rounded-lg p-1">
                 <img
                 src={logo}
-                alt="Muneem Ji Logo"
+                alt="Muneem Jee Logo"
                 className="object-contain w-full h-full"
               />
               </div>
               <div className="flex flex-col">
-                <span className="font-bold text-lg text-amber-400">Muneem Ji</span>
+                <span className="font-bold text-lg text-amber-400">Muneem Jee</span>
                 <span className="text-xs text-red-500">Finance & Accounts</span>
               </div>
             </Link>
@@ -107,7 +107,7 @@ export default function Footer() {
         <div className="border-t border-amber-600 pt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm opacity-70">
             <div>
-              <p>&copy; 2025 Muneem Ji. Create by Mohit Prajapati.</p>
+              <p>&copy; 2025 Muneem Jee. Create by Mohit Prajapati.</p>
             </div>
             <div className="flex gap-6 justify-end">
               <Link to="/privacy-policy" className="hover:text-amber-400 transition">

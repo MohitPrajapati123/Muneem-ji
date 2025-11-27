@@ -24,13 +24,13 @@ export default function Header() {
             <div className="w-16 h-16">
               <img
                 src={logo}
-                alt="Muneem Ji Logo"
+                alt="Muneem Jee Logo"
                 className="object-contain w-full h-full"
               />
             </div>
 
             <div className="hidden sm:flex flex-col">
-              <span className="font-bold text-2xl text-red-600">Muneem Ji</span>
+              <span className="font-bold text-2xl text-red-600">Muneem Jee</span>
               <span className="text-xs text-amber-600 font-semibold">
                 Finance & Accounts
               </span>
