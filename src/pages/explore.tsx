@@ -6,39 +6,52 @@ import { Link } from "react-router-dom";
 export default function ExplorePage() {
   const services = [
     {
-      title: "Finance & Accounts",
-      description: "Master bookkeeping, GST, income tax, and financial statements",
+      title: "Taxation",
+      description:
+        "GST, TDS, ITR filing, reconciliation, tax planning & compliance solutions.",
       icon: "💰",
-      link: "/finance",
+      link: "/taxation",
       color: "from-blue-500 to-blue-600",
     },
     {
-      title: "HR Services",
-      description: "Complete guide to employee management, payroll, and compliance",
+      title: "Labour & Legal Compliance",
+      description:
+        "PF, ESIC, payroll compliance, employee documentation & HR regulatory support.",
       icon: "👥",
-      link: "/hr-services",
+      link: "/labour-legal-compliance",
       color: "from-green-500 to-green-600",
     },
     {
-      title: "ESIC",
-      description: "Employee State Insurance registration, benefits, and contributions",
-      icon: "🛡️",
-      link: "/esic",
-      color: "from-orange-500 to-orange-600",
-    },
-    {
-      title: "EPFO",
-      description: "Provident fund, pension schemes, and gratuity information",
-      icon: "📈",
-      link: "/epfo",
+      title: "Financial Reporting",
+      description:
+        "Financial statements, MIS, consolidation & statutory reporting services.",
+      icon: "📊",
+      link: "/financial-reporting",
       color: "from-purple-500 to-purple-600",
     },
     {
+      title: "Registration Services",
+      description:
+        "Company, LLP, GST, MSME, EPFO, ESIC & all business registrations.",
+      icon: "📝",
+      link: "/registration",
+      color: "from-orange-500 to-orange-600",
+    },
+    {
       title: "Startup Guide",
-      description: "6-step roadmap to launch your business successfully",
+      description:
+        "Step-by-step roadmap for launching and growing your startup legally.",
       icon: "🚀",
       link: "/startup",
       color: "from-red-500 to-red-600",
+    },
+    {
+      title: "Accounting",
+      description:
+        "Bookkeeping, GST invoicing, payroll, and financial statement preparation.",
+      icon: "📘",
+      link: "/accounting",
+      color: "from-teal-500 to-teal-600",
     },
   ];
 
@@ -55,7 +68,7 @@ export default function ExplorePage() {
               Explore All Services
             </h1>
             <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
-              Comprehensive solutions for all your business and compliance needs
+              Your complete business compliance and financial management partner.
             </p>
           </div>
         </section>

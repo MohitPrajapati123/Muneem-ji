@@ -21,43 +21,47 @@ import startupImg from "../assets/startup-business-launch-entrepreneurship.jpg";
 const services = [
   {
     icon: DollarSign,
-    title: "Finance & Accounts",
-    description: "Learn bookkeeping, GST, taxation, and financial management",
-    route: "/finance",
-    image: financeImg, // ✅ Correct variable
+    title: "Taxation",
+    description:
+      "GST, TDS, ITR filing, reconciliation, tax planning & financial compliance services.",
+    route: "/taxation",
+    image: financeImg,
   },
   {
     icon: Users,
-    title: "HR Services",
-    description: "Employee management, payroll, and workplace compliance",
-    route: "/hr-services",
+    title: "Labour & Legal Compliance",
+    description:
+      "PF, ESIC, payroll compliance, employee documentation & HR regulatory support.",
+    route: "/labour-legal-compliance",
     image: hrImg,
   },
   {
     icon: FileText,
-    title: "ESIC",
-    description: "Employees' State Insurance Corporation guidelines",
-    route: "/esic",
+    title: "Financial Reporting",
+    description:
+      "Financial statements, MIS reporting, consolidation & statutory reporting.",
+    route: "/financial-reporting",
     image: esicImg,
   },
   {
     icon: Briefcase,
-    title: "EPFO",
-    description: "Provident fund, gratuity, and retirement benefits",
-    route: "/epfo",
+    title: "Registration",
+    description:
+      "Company, LLP, Proprietorship, GST, MSME, EPFO, ESIC & other business registrations.",
+    route: "/registration",
     image: epfoImg,
   },
   {
     icon: Rocket,
     title: "Startup Guide",
-    description: "Complete roadmap to launch and grow your business",
+    description:
+      "Complete roadmap for launching your startup including registration & legal setup.",
     route: "/startup",
     image: startupImg,
   },
 ];
 
 export default function Services() {
-  // Type: number | null for hover index
   const [hoveredService, setHoveredService] = useState<number | null>(null);
 
   return (
@@ -71,7 +75,7 @@ export default function Services() {
           </h2>
           <p className="text-foreground/60 max-w-2xl mx-auto">
             Everything you need to operate and grow a successful, fully regulated business.
-         </p>
+          </p>
         </div>
 
         {/* Cards */}
@@ -85,8 +89,8 @@ export default function Services() {
                   onMouseEnter={() => setHoveredService(index)}
                   onMouseLeave={() => setHoveredService(null)}
                   className="bg-card border border-border rounded-xl overflow-hidden 
-                             hover:shadow-2xl hover:border-primary transition-all duration-300
-                             cursor-pointer transform hover:scale-105 h-full"
+                            hover:shadow-2xl hover:border-primary transition-all duration-300
+                            cursor-pointer transform hover:scale-105 h-full"
                 >
                   {/* Service image */}
                   <img
@@ -121,7 +125,6 @@ export default function Services() {
             );
           })}
         </div>
-
       </div>
     </section>
   );
