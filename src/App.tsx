@@ -8,17 +8,18 @@ import BlogPage from "./pages/blog/Blog";
 import BlogPostPage from "./pages/blog/BlogPostPage";
 import ContactPage from "./pages/contact";
 import DisclaimerPage from "./pages/disclaimer";
-import EPFOPage from "./pages/epfo";
-import ESICPage from "./pages/esic";
+import RegistrationPage from "./pages/registration..tsx";
+import AccountingPage from "./pages/accounting";
 import ExplorePage from "./pages/explore";
 import FAQsPage from "./pages/faqs";
-import FinancePage from "./pages/finance";
-import HRServicesPage from "./pages/hr-services";
+import FinancialReportingPage from "./pages/financial-reporting";
+import LabourAndLegalCompliance from "./pages/LabourAndLegalCompliance.tsx";
 import LearnMorePage from "./pages/learn-more";
 import LearnMorePage1 from "./pages/learn-more1";
 import PrivacyPolicy from "./pages/privacy-policy";
 import StartupPage from "./pages/startup";
 import TermsAndConditionsPage from "./pages/terms-and-conditions";
+import TaxationPage from "./pages/taxation";
 
 const App = () => {
   return (
@@ -31,18 +32,19 @@ const App = () => {
           <Route path="/blog/:id" element={<BlogPostPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/disclaimer" element={<DisclaimerPage />} />
-          <Route path="/epfo" element={<EPFOPage />} />
-          <Route path="/esic" element={<ESICPage />} />
+          <Route path="/registration" element={<RegistrationPage />} />
           <Route path="/explore" element={<ExplorePage />} />
           <Route path="/faqs" element={<FAQsPage />} />
-          <Route path="/finance" element={<FinancePage />} />
-          <Route path="/hr-services" element={<HRServicesPage />} />
+          <Route path="/financial-reporting"element={<FinancialReportingPage />}/>
+          <Route path="/labour-legal-compliance"element={<LabourAndLegalCompliance />}/>
           <Route path="/learn-more" element={<LearnMorePage />} />
           <Route path="/learn-more1" element={<LearnMorePage1 />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/startup" element={<StartupPage/>}/>
           <Route path="/terms-and-conditions" element={<TermsAndConditionsPage/>}/>
-           <Route path="/financial-reporting/esic-registration" element={<EPFOPage />} />
+          <Route path="/taxation" element={<TaxationPage />} />
+          <Route path="/accounting" element={<AccountingPage />} />
+           
         </Routes>
       </HomeLayout>
     </BrowserRouter>

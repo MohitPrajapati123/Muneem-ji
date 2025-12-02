@@ -26,7 +26,7 @@ export default function HRServicesPage() {
               </h1>
 
               <p className="text-lg text-foreground/60 mb-8">
-                Complete HR solutions for employee management, payroll processing, and workplace compliance.
+                Complete HR solutions for employee management, compliance, documentation, payroll, and statutory filings.
               </p>
 
               <Link
@@ -47,6 +47,8 @@ export default function HRServicesPage() {
           <h2 className="text-3xl font-bold text-foreground mb-12">Our HR Services</h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            {/* Existing Services */}
             {[
               {
                 title: "Employee Recruitment",
@@ -56,7 +58,7 @@ export default function HRServicesPage() {
               {
                 title: "Payroll Management",
                 description:
-                  "Salary processing, statutory deductions, and salary slips generation.",
+                  "Salary processing, statutory deductions, and salary slip generation.",
               },
               {
                 title: "Leave Management",
@@ -77,6 +79,44 @@ export default function HRServicesPage() {
                 title: "Performance Management",
                 description:
                   "Appraisal systems, performance tracking, and employee development.",
+              },
+
+              /* ⭐ NEW SERVICES ADDED BELOW ⭐ */
+
+              {
+                title: "HR Compliance",
+                description:
+                  "We handle employee documentation, payroll compliance, attendance records, and HR policy support.",
+              },
+              {
+                title: "ESIC Management",
+                description:
+                  "Accurate ESIC deductions, monthly filings, employee registration, and insurance compliance.",
+              },
+              {
+                title: "PF (Provident Fund) Compliance",
+                description:
+                  "Accurate PF calculation, challan preparation, return filing, and statutory compliance support.",
+              },
+              {
+                title: "PR Accounting",
+                description:
+                  "Complete payroll accounting including statutory deductions, monthly reports, and payroll summaries.",
+              },
+              {
+                title: "Company Registration (Pvt. Ltd.)",
+                description:
+                  "Private Limited firm registration, MOA/AOA preparation, and complete startup legal formalities.",
+              },
+              {
+                title: "Partnership / LLP / Proprietorship",
+                description:
+                  "Firm registration, partnership deed, LLP incorporation, MSME registration, and legal support.",
+              },
+              {
+                title: "ROC Filing (Registrar of Companies)",
+                description:
+                  "Annual returns, compliance documents, statutory registers, and all types of MCA filings.",
               },
             ].map((service, index) => (
               <div

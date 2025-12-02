@@ -34,23 +34,28 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/finance" className="hover:text-amber-400 transition">
-                  Finance & Accounts
+                <Link to="/taxation" className="hover:text-amber-400 transition">
+                  Taxation
                 </Link>
               </li>
               <li>
-                <Link to="/hr-services" className="hover:text-amber-400 transition">
-                  HR Services
+                <Link to="/financial-reporting" className="hover:text-amber-400 transition">
+                  Financial-Reporting
                 </Link>
               </li>
               <li>
-                <Link to="/esic" className="hover:text-amber-400 transition">
-                  ESIC
+                <Link to="/labour-legal-compliance" className="hover:text-amber-400 transition">
+                  Labour & Legal Compliance
                 </Link>
               </li>
               <li>
-                <Link to="/epfo" className="hover:text-amber-400 transition">
-                  EPFO
+                <Link to="/registration" className="hover:text-amber-400 transition">
+                  Registration
+                </Link>
+              </li>
+              <li>
+                <Link to="/accounting" className="hover:text-amber-400 transition">
+                 Accounting
                 </Link>
               </li>
             </ul>
