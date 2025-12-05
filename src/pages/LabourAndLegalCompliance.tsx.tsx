@@ -2,7 +2,7 @@
 
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import { ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react"; // CheckCircle removed because not used
 import { Link } from "react-router-dom";
 import human from "../assets/human-resource-management-team-collaboration.png";
 
@@ -115,7 +115,7 @@ export default function HRServicesPage() {
       {/* HERO */}
       <section className="py-16 md:py-24 bg-linear-to-br from-primary/10 to-background">
         <div className="max-w-7xl mx-auto px-4 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
-          
+
           <img src={human} alt="HR Services" className="rounded-xl shadow-lg w-full" />
 
           <div>
@@ -136,7 +136,7 @@ export default function HRServicesPage() {
         </div>
       </section>
 
-      {/* SERVICES GRID WITH DETAILS */}
+      {/* SERVICE DETAILS LIST */}
       <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 lg:px-8 space-y-10">
 
@@ -175,7 +175,7 @@ export default function HRServicesPage() {
       <section className="py-12 md:py-16 bg-primary/5 border-t border-border">
         <div className="max-w-7xl mx-auto px-4 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <div>
-            <h3 className="text-2xl font-bold mb-2 text-black ">Need HR & Labour Law Support?</h3>
+            <h3 className="text-2xl font-bold mb-2 text-black">Need HR & Labour Law Support?</h3>
             <p className="text-foreground/60 max-w-xl">
               Our team handles compliance end-to-end — payroll, PF/ESIC, registers, 
               documentation & inspections — so you can focus on business.
