@@ -2,7 +2,7 @@
 
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import { ArrowRight, FileText, CheckCircle } from "lucide-react";
+import { ArrowRight, FileText } from "lucide-react"; 
 import { Link } from "react-router-dom";
 
 export default function RegistrationPage() {
