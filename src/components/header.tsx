@@ -80,20 +80,20 @@ export default function Header() {
         {/* MOBILE NAVIGATION */}
         {isOpen && (
           <nav className="md:hidden pb-4 flex flex-col gap-4">
-            <Link to="/about" className="text-gray-700 hover:text-amber-600 font-medium" onClick={handleNavClick}>
-              About Us
+            <Link to="/taxation" className="text-gray-700 hover:text-amber-600 font-medium" onClick={handleNavClick}>
+              Taxation
             </Link>
-            <Link to="/finance" className="text-gray-700 hover:text-amber-600 font-medium" onClick={handleNavClick}>
-              Finance
+            <Link to="/financial-reporting" className="text-gray-700 hover:text-amber-600 font-medium" onClick={handleNavClick}>
+              Financial-Reporting
             </Link>
-            <Link to="/hr-services" className="text-gray-700 hover:text-amber-600 font-medium" onClick={handleNavClick}>
-              HR Services
+            <Link to="/labour-legal-compliance" className="text-gray-700 hover:text-amber-600 font-medium" onClick={handleNavClick}>
+              Labour & Legal Compliance
             </Link>
-            <Link to="/esic" className="text-gray-700 hover:text-amber-600 font-medium" onClick={handleNavClick}>
-              ESIC
+            <Link to="/registration" className="text-gray-700 hover:text-amber-600 font-medium" onClick={handleNavClick}>
+              Registration
             </Link>
-            <Link to="/epfo" className="text-gray-700 hover:text-amber-600 font-medium" onClick={handleNavClick}>
-              EPFO
+            <Link to="/accounting" className="text-gray-700 hover:text-amber-600 font-medium" onClick={handleNavClick}>
+             Accounting
             </Link>
             <Link
               to="/contact"
